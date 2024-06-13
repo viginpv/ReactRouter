@@ -2,4 +2,9 @@
     height: 800px;
     width: 100%;
     background-color: rgb(41, 146, 146);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    overflow: scroll;
 }
