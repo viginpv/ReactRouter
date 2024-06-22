@@ -17,7 +17,7 @@ const slice = createSlice({
             state.ProductDatas=action.payload
         },
         removelbum:(state,action)=>{
-            state.ProductDatas=null
+            state.datas=null
         }
     }
 })

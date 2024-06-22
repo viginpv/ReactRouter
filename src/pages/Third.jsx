@@ -1,10 +1,18 @@
 import React from 'react'
-import {useSelector} from "react-redux"
+import {useSelector,useDispatch} from "react-redux"
+import { removelbum } from './redux/UserSlice';
 
 const Third = () => {
 
 const datas= useSelector((state)=>state.apidatas.datas)
 console.log('datas',datas);
+
+const dispatch = useDispatch()
+
+function removedata(){
+  dispatch(removelbum())
+  
+}
 
 
 
@@ -20,6 +28,7 @@ console.log('datas',datas);
             </>
             
         ))}
+        <button onClick={removedata}>remover datas</button>
     </div>
 
   )
